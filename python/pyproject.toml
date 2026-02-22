@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "overdrive-db"
+version = "1.0.1"
+description = "Embeddable document database — like SQLite for JSON"
+readme = "README.md"
+license = {text = "MIT OR Apache-2.0"}
+requires-python = ">=3.8"
+authors = [
+    {name = "ALL FOR ONE TECH", email = "admin@afot.in"}
+]
+keywords = ["database", "document", "json", "sql", "embedded", "nosql", "sqlite"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Database",
+    "Topic :: Database :: Database Engines/Servers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/ALL-FOR-ONE-TECH/OverDrive-DB_SDK"
+Documentation = "https://github.com/ALL-FOR-ONE-TECH/OverDrive-DB_SDK/blob/main/docs/python-guide.md"
+Repository = "https://github.com/ALL-FOR-ONE-TECH/OverDrive-DB_SDK"
+"Bug Tracker" = "https://github.com/ALL-FOR-ONE-TECH/OverDrive-DB_SDK/issues"
+Downloads = "https://github.com/ALL-FOR-ONE-TECH/OverDrive-DB_SDK/releases"
+
+[tool.setuptools.packages.find]
+include = ["overdrive*"]
+
+[tool.setuptools.package-data]
+overdrive = ["*.dll", "*.so", "*.dylib"]
