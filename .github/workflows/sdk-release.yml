@@ -171,28 +171,28 @@ jobs:
           # Windows x64 — static CRT embedded (no vcruntime140 needed)
           - os: windows-latest
             target: x86_64-pc-windows-msvc
-            built_name: overdrive_db.dll
+            built_name: overdrive.dll
             asset_name: overdrive-windows-x64.dll
             rustflags: "-C target-feature=+crt-static"
 
           # Linux x64
           - os: ubuntu-latest
             target: x86_64-unknown-linux-gnu
-            built_name: liboverdrive_db.so
+            built_name: liboverdrive.so
             asset_name: liboverdrive-linux-x64.so
             rustflags: ""
 
           # macOS ARM64 (Apple Silicon)
           - os: macos-latest
             target: aarch64-apple-darwin
-            built_name: liboverdrive_db.dylib
+            built_name: liboverdrive.dylib
             asset_name: liboverdrive-macos-arm64.dylib
             rustflags: ""
 
           # macOS x64 (Intel)
           - os: macos-latest
             target: x86_64-apple-darwin
-            built_name: liboverdrive_db.dylib
+            built_name: liboverdrive.dylib
             asset_name: liboverdrive-macos-x64.dylib
             rustflags: ""
 
