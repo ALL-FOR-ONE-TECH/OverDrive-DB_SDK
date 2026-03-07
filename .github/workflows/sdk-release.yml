@@ -330,7 +330,7 @@ jobs:
             dist/liboverdrive-macos-arm64.dylib
             dist/liboverdrive-macos-x64.dylib
             dist/checksums-sha256.txt
-          token: ${{ secrets.SDK_RELEASE_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           draft: false
           prerelease: false
           fail_on_unmatched_files: false
